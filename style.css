@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: linear-gradient(135deg, #ffc593, #bc7198, #5a77ff);
+}
+
+.chat__wrapper {
+  margin: 0 auto;
+  padding: 200px 0 0 0;
+  width: 70%;
+  height: 1000px;
+  background-color: #ffffff;
+  /* outline: 3px red solid; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #e5e5e5;
+  /* outline: 3px red solid; */
+}
+
+.header__avatar {
+  width: 90px;
+  margin: 10px 0 10px 20px;
+  padding: 0;
+  border-radius: 50%;
+  /* outline: 3px red solid; */
+}
+
+.header__user-info {
+  margin: 0 auto;
+  /* outline: 3px red solid; */
+}
+
+.header__name {
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.header__visiting-time {
+  color: #666668;
+}
+
+.header__menu {
+  margin: 0 60px 0 0;
+  width: 40.54px;
+  height: 40.54px;
+}
+
+.dialogue__message-user {
+  background-color: #007aff;
+  display: flex;
+  margin-left: 830px;
+  margin-top: 20px;
+  max-width: 600px;
+  /* width: 230.29px; */
+  height: fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  /* outline: 3px red solid; */
+}
+
+.dialogue__message-companion {
+  background-color: #f2f2f7;
+  display: flex;
+  margin-left: 25px;
+  margin-top: 20px;
+  max-width: 600px;
+  /* width: 230.29px; */
+  height: fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  /* outline: 3px red solid; */
+}
+
+.dialogue__avatar_companion {
+  width: 90px;
+  margin: 10px 0 10px 20px;
+  padding: 0;
+  border-radius: 50%;
+  /* outline: 3px red solid; */
+}
+
+.dialogue__message-text {
+  overflow-wrap: break-word;
+  max-width: 300px;
+  margin: 32px 40px 44px 26px;
+  /* outline: 3px red solid; */
+}
+
+.dialogue__message-text_user {
+  color: #ffffff;
+}
+
+.dialogue__message-text_companion {
+  color: #2c2c2e;
+}
+
+.dialogue__info {
+  margin: 85px 10px 0 0;
+  display: flex;
+  /* outline: 3px red solid; */
+}
+
+.dialogue__time_user {
+  color: #ffffff;
+}
+
+.dialogue__time_companion {
+  color: #2c2c2e;
+}
+
+.dialogue__ticks {
+  width: 32.5px;
+  height: 15px;
+}
+
+.answer__wrapper {
+  margin: 0 auto;
+  /* width: 70%; */
+  /* outline: 3px red solid; */
+}
+
+.answer__button {
+  display: inline-block;
+  /* width: 15em; */
+  width: 688px;
+  height: 80px;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: #2e7ebd 0 1px 2px;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.7em 0;
+  border: 1px solid;
+  border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
+  border-radius: 6px;
+  outline: none;
+  background: #60a3d8 linear-gradient(#89bbe2, #60a3d8 50%, #378bce);
+  box-shadow: inset rgba(255, 255, 255, 0.5) 1px 1px;
+}
+
+.menu-modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu-modal__modal-window {
+  position: relative;
+  border-radius: 53px;
+  z-index: 2;
+  width: 352px;
+  height: 719px;
+  background-image: url(./images/menu-modal/IPhone_X.png);
+  background-color: #007aff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.menu-modal__modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.menu-modal__title {
+  font-family: "Impact";
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.menu-modal__button {
+  display: inline-block;
+  padding: 20px 46px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00b5af;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-modal__botton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.menu-modal__botton:active {
+  background-color: #003d80;
+  transform: translateY(1px);
+}

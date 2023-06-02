@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Chat</title>
+  </head>
+  <body class="body">
+    <!-- START Главный экран с игрой -->
+    <div class="chat__wrapper">
+      <div class="header">
+        <img
+          src="./images/avatars/girl-avatar.jpeg"
+          alt="аватарка"
+          class="header__avatar"
+        />
+        <div class="header__user-info">
+          <p class="header__name">Любимая 🥰</p>
+          <p class="header__visiting-time">last seen 45 minutes ago</p>
+        </div>
+        <img src="./images/UI/Icon.svg" alt="" class="header__menu" />
+      </div>
+      <div class="dialogue">
+        <div class="dialogue__message-user">
+          <p class="dialogue__message-text dialogue__message-text_user">
+            Привет!
+          </p>
+          <div class="dialogue__info">
+            <p class="dialogue__time dialogue__time_user">11:31</p>
+            <img
+              src="./images/UI/ticks.png"
+              alt="галочки"
+              class="dialogue__ticks"
+            />
+          </div>
+        </div>
+
+        <div class="dialogue__message-companion">
+          <img
+            src="./images/avatars/girl-avatar.jpeg"
+            alt="avatar"
+            class="dialogue__avatar_companion"
+          />
+          <p class="dialogue__message-text dialogue__message-text_companion">
+            Привет!
+          </p>
+          <div class="dialogue__info">
+            <p class="dialogue__time dialogue__time_companion">11:31</p>
+          </div>
+        </div>
+
+    <div class="answer__wrapper">
+      <button class="answer__button">Пошли гулять</button>
+      <button class="answer__button">Я хочу тебе кое что сказать...</button>
+    </div>
+    <!-- END Главный экран с игрой -->
+
+
+    <!-- START Главное меню -->
+    <!-- <audio src="./audio.mp3" autoplay loop></audio> -->
+    <div class="menu-modal">
+      <div class="menu-modal__modal-window">
+        <div class="menu-modal__modal-content">
+          <h1 class="menu-modal__title">СМС чат</h1>
+          <button class="menu-modal__button">Начать игру</button>
+          <button class="menu-modal__button">Правила</button>
+        </div>
+      </div>
+      <div class="menu-modal__overlay"></div>
+    </div>
+
+    <!-- END Главное меню -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
