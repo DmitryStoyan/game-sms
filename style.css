@@ -13,14 +13,12 @@
   width: 70%;
   height: 1000px;
   background-color: #ffffff;
-  /* outline: 3px red solid; */
 }
 
 .header {
   display: flex;
   align-items: center;
   border-bottom: 3px solid #e5e5e5;
-  /* outline: 3px red solid; */
 }
 
 .header__avatar {
@@ -28,12 +26,10 @@
   margin: 10px 0 10px 20px;
   padding: 0;
   border-radius: 50%;
-  /* outline: 3px red solid; */
 }
 
 .header__user-info {
   margin: 0 auto;
-  /* outline: 3px red solid; */
 }
 
 .header__name {
@@ -51,30 +47,32 @@
   height: 40.54px;
 }
 
+.dialogue {
+  display: flex;
+  flex-direction: column;
+}
+
 .dialogue__message-user {
+  align-self: flex-end;
   background-color: #007aff;
   display: flex;
-  margin-left: 830px;
-  margin-top: 20px;
+  margin: 20px 25px 0 0;
   max-width: 600px;
-  /* width: 230.29px; */
   height: fit-content;
   width: fit-content;
   border-radius: 5px;
-  /* outline: 3px red solid; */
 }
 
 .dialogue__message-companion {
+  align-self: flex-start;
   background-color: #f2f2f7;
   display: flex;
   margin-left: 25px;
   margin-top: 20px;
   max-width: 600px;
-  /* width: 230.29px; */
   height: fit-content;
   width: fit-content;
   border-radius: 5px;
-  /* outline: 3px red solid; */
 }
 
 .dialogue__avatar_companion {
@@ -82,14 +80,12 @@
   margin: 10px 0 10px 20px;
   padding: 0;
   border-radius: 50%;
-  /* outline: 3px red solid; */
 }
 
 .dialogue__message-text {
   overflow-wrap: break-word;
   max-width: 300px;
   margin: 32px 40px 44px 26px;
-  /* outline: 3px red solid; */
 }
 
 .dialogue__message-text_user {
@@ -101,9 +97,10 @@
 }
 
 .dialogue__info {
-  margin: 85px 10px 0 0;
   display: flex;
-  /* outline: 3px red solid; */
+  justify-content: flex-end;
+  align-items: end;
+  padding: 0 10px 15px 0;
 }
 
 .dialogue__time_user {
@@ -120,22 +117,22 @@
 }
 
 .answer__wrapper {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  /* width: 70%; */
-  /* outline: 3px red solid; */
+  padding: 40px 0 0 0;
 }
 
 .answer__button {
   display: inline-block;
-  /* width: 15em; */
-  width: 688px;
+  width: 49%;
   height: 80px;
-  font-size: 80%;
+  font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: #2e7ebd 0 1px 2px;
   text-decoration: none;
   text-align: center;
-  padding: 0.7em 0;
+  /* padding: 0.7em 0; */
   border: 1px solid;
   border-color: #60a3d8 #2970a9 #2970a9 #60a3d8;
   border-radius: 6px;

@@ -1,0 +1,65 @@
+.level-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.level-modal__modal-window {
+  position: relative;
+  width: 800px;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.level-modal__modal-content {
+  margin: 10px;
+}
+
+.level-modal__title {
+  font-family: "Impact";
+
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.level-modal__button-level {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #4e9af1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.level-modal__button:hover {
+  background-color: #3681c9;
+}
+
+.level-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.level-modal__button-close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -48px;
+  right: -38px;
+  cursor: pointer;
+}

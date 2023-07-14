@@ -1,6 +1,12 @@
-const button = document.querySelector(".menu-modal__button");
+const buttonStart = document.querySelector(".button-start");
 const menu = document.querySelector(".menu-modal");
 
-button.addEventListener("click", function () {
+buttonStart.addEventListener("click", function () {
   menu.classList.add("hidden");
+});
+
+const buttonRules = document.querySelector(".button-rules");
+
+buttonRules.addEventListener("click", function () {
+  window.location.href = "./rules/rules.html";
 });
